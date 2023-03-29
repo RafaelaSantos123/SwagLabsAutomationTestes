@@ -8,6 +8,7 @@ class SwagLabsAutomationTestesApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("Isadora");
 	}
 
 }
