@@ -1,10 +1,7 @@
 package com.example.SwagLabsAutomationTestes.core;
 
 
-import com.example.SwagLabsAutomationTestes.pages.acessarCarrinhoPage;
-import com.example.SwagLabsAutomationTestes.pages.compraPage;
-import com.example.SwagLabsAutomationTestes.pages.homePage;
-import com.example.SwagLabsAutomationTestes.pages.loginPage;
+import com.example.SwagLabsAutomationTestes.pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,8 +17,8 @@ public class core {
   public static loginPage loginPage = new loginPage();
   public static homePage homePage = new homePage();
   public static compraPage compraPage = new compraPage();
-
   public static acessarCarrinhoPage acessarCarrinhoPage = new acessarCarrinhoPage();
+  public static checkoutPage checkoutPage = new checkoutPage();
 
     public static void abrirChrome(){
         WebDriverManager.chromedriver().setup();
