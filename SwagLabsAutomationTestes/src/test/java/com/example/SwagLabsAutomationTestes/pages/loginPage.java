@@ -19,8 +19,7 @@ public class loginPage extends core {
         WebElement password = driver.findElement(By.id("password"));
         password.sendKeys("secret_sauce");
 
-        WebElement button = driver.findElement(By.id("login-button"));
-        button.click();
+        //WebElement button = driver.findElement(By.id("login-button"));
         clicar(btnlogin);
 
 

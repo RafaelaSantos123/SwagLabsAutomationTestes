@@ -24,6 +24,7 @@ class homeTestes extends core {
 
         loginPage.realizarLogin();
         homePage.realizarOrdenacaoPrecos();
+
     }
 
     @AfterEach

@@ -47,5 +47,10 @@ public class core {
 
    }
 
+   public static  void escrever (By locator, String text){
+        WebElement element = driver.findElement(locator);
+        element.sendKeys(text);
+   }
+
 }
 

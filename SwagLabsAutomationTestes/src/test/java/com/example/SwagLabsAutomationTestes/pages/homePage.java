@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 
 public class homePage extends core {
 
-    public By realizarClickParaSelecionar = By.id("//*[@id=\"header_container\"]/div[2]/div/span");
+    public By realizarClickParaSelecionar = By.xpath("//*[@id=\"header_container\"]/div[2]/div/span");
 
-    public By selectProdutc  = By.id("//*[@id=\"header_container\"]/div[2]/div/span/select");
+    public By selectProdutc  = By.xpath("//*[@id=\"header_container\"]/div[2]/div/span/select");
 
-    public By selectOrdenacaoMaiorPreco = By.id("//*[@id=\"header_container\"]/div[2]/div/span/select/option[4]");
+    public By selectOrdenacaoMaiorPreco = By.xpath("//*[@id=\"header_container\"]/div[2]/div/span/select/option[4]");
 
     public void realizarOrdenacaoPrecos () throws InterruptedException {
 
