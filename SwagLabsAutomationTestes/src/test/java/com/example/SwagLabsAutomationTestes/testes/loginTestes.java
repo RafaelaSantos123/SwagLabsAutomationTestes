@@ -20,6 +20,7 @@ class loginTestes extends core {
     void openBrowser(){
         abrirChrome();
 
+
     }
 
     @Test

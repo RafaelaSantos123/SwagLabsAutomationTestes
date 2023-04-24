@@ -1,5 +1,6 @@
 package com.example.SwagLabsAutomationTestes;
 
+import com.example.SwagLabsAutomationTestes.pages.loginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SwagLabsAutomationTestesApplicationTests {
+
+
 	WebDriver driver;
 	@Test
 	void contextLoads() {

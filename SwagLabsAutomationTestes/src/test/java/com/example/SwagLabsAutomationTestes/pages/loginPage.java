@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 
 public class loginPage extends core {
 
+    public By btnlogin  = By.id("login-button");
+
     public void realizarLogin() throws InterruptedException {
 
 
@@ -19,7 +21,9 @@ public class loginPage extends core {
 
         WebElement button = driver.findElement(By.id("login-button"));
         button.click();
-        Thread.sleep(5000);
+        clicar(btnlogin);
+
+
     }
 
 }
