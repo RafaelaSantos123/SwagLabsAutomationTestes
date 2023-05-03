@@ -6,10 +6,13 @@ import org.openqa.selenium.WebElement;
 
 public class acessarCarrinhoPage extends core {
 
+    public By btnCarrinho  = By.id("shopping_cart_container");
+
     public void acessoCarrinho() throws InterruptedException {
-        WebElement btnCarrinho = driver.findElement(By.id("shopping_cart_container"));
-        btnCarrinho.click();
-        Thread.sleep(5000);
+        clicar(btnCarrinho);
+//        WebElement btnCarrinho = driver.findElement(By.id("shopping_cart_container"));
+//        btnCarrinho.click();
+//        Thread.sleep(5000);
     }
 
 }
