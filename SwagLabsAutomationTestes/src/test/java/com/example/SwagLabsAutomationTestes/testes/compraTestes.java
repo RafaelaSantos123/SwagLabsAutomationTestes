@@ -13,8 +13,9 @@ public class compraTestes extends core {
     @Test
     void realizarCompra() throws InterruptedException  {
         loginPage.realizarLogin();
-        homePage.realizarOrdenacaoPrecos();
+        //homePage.realizarOrdenacaoPrecos();
         compraPage.realizarCompra();
+        checkoutPage.finalizarCompra("Isadora", "Alves", "38413219");
 
     }
     @AfterEach
