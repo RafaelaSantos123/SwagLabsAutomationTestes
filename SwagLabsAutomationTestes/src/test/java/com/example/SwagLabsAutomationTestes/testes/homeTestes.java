@@ -17,6 +17,7 @@ class homeTestes extends core {
 
     @BeforeEach
     void openBrowser(){
+
         abrirChrome();
     }
     @Test
@@ -29,6 +30,7 @@ class homeTestes extends core {
 
     @AfterEach
     void quitBrowser(){
+
         driver.quit();
     }
 }

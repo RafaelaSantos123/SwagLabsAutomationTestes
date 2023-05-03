@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -41,13 +43,21 @@ public class core {
 
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
    }
+
+   public static void esperaExplicita(By locator){
+       WebElement firstResult = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(locator));
+
+   }
+
    public static void clicar( By locator){
-       WebElement element = driver.findElement(locator);
-       element.click();
+        esperaExplicita(locator);
+        WebElement element = driver.findElement(locator);
+        element.click();
 
    }
 
    public static  void escrever (By locator, String text){
+        esperaExplicita(locator);
         WebElement element = driver.findElement(locator);
         element.sendKeys(text);
    }
