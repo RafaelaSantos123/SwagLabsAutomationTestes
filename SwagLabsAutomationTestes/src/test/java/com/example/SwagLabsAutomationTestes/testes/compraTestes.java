@@ -16,7 +16,6 @@ public class compraTestes extends core {
         loginPage.realizarLogin();
         compraPage.realizarCompra();
         checkoutPage.finalizarCompra("Isadora", "Alves", "38413219");
-
     }
     @AfterEach
     void quitBrowser(){
