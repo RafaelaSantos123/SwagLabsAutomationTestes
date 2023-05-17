@@ -35,6 +35,7 @@ public class compraPage extends core {
         clicar(btnCarrinho);
         scroll(excluirProdutoUm);
         scroll(btnCheckout);
+
     }
 
 }
