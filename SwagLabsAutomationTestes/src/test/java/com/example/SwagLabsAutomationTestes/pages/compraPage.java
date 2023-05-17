@@ -22,6 +22,8 @@ public class compraPage extends core {
 
     public By btnCarrinho  = By.id("shopping_cart_container");
 
+    public By excluirProdutoUm = By.id("remove-sauce-labs-backpack");
+
     public void realizarCompra() throws InterruptedException {
 
         clicar(produtoUm);
@@ -31,7 +33,9 @@ public class compraPage extends core {
         clicar(produtoCinco);
         clicar(produtoSeis);
         clicar(btnCarrinho);
+        scroll(excluirProdutoUm);
         scroll(btnCheckout);
+
     }
 
 }
