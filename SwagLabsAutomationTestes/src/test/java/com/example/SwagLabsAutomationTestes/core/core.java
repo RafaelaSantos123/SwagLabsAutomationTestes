@@ -62,7 +62,7 @@ public class core {
         WebElement element = driver.findElement(locator);
         element.sendKeys(text);
    }
-   public static void scroll (By locator){
+   public static void scroll (By locator) throws InterruptedException {
        WebElement iframe = driver.findElement(locator);
        new Actions(driver)
                .scrollToElement(iframe)
