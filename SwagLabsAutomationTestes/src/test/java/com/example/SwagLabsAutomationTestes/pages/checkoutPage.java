@@ -7,7 +7,7 @@ public class checkoutPage extends core {
 
     public By btnCarrinho  = By.id("shopping_cart_container");
     public By btnVoltarAsCompras = By.xpath("//button[@id='continue-shopping']");
-    public By produtoQuatro = By.id("add-to-cart-sauce-labs-bolt-t-shirt");
+    public By produtoQuatro = By.id("item_1_title_link");
     public By btnCheckout  = By.id("checkout");
     public By btnContinue  = By.id("continue");
     public By btnFinish    = By.id("finish");
