@@ -31,11 +31,11 @@ public class core {
     public static void abrirChrome(){
         WebDriverManager.chromedriver().setup();
         ChromeOptions ops = new ChromeOptions();
-        ops.addArguments("--remote-allow-origins=*");
+        ops.addArguments("--remote-allow-origins=");
         driver = new ChromeDriver(ops);
         driver.manage().window().maximize();
         esperaImplicita();
-        driver.get("https://www.saucedemo.com/");
+        driver.get("www.saucedemo.com");
 
 
     }
@@ -53,7 +53,7 @@ public class core {
    public static void clicar( By locator){
         esperaExplicita(locator);
         WebElement element = driver.findElement(locator);
-        element.click();
+        element.isDisplayed();
 
    }
 

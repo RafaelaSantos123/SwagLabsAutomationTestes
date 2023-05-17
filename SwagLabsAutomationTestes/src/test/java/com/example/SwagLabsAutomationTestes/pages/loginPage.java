@@ -12,7 +12,7 @@ public class loginPage extends core {
 
     public By userName  = By.id("user-name");
 
-    public By passWord  = By.id("password");
+    public By passWord  = By.xpath("password");
 
 
 
