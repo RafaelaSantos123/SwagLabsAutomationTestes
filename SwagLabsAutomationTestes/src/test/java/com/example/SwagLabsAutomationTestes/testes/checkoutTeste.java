@@ -26,7 +26,7 @@ public class checkoutTeste extends core {
      public void verificarTituloFinalizacaoCompra() {
         String ActualTitle = driver.getTitle();
         System.out.println(ActualTitle);
-        String ExpectedTitle = "Swag Labs";
+        String ExpectedTitle = "Swag Lab";
         //Verificação Passando texto como parametro
         Assert.hasText(ActualTitle, "Swag Labs");
 
