@@ -9,7 +9,7 @@ public class checkoutPage extends core {
     public By btnVoltarAsCompras = By.xpath("//button[@id='continue-shopping']");
     public By produtoQuatro = By.id("item_1_title_link");
     public By btnCheckout  = By.id("checkout");
-    public By btnContinue  = By.id("continues");
+    public By btnContinue  = By.id("continue");
     public By btnFinish    = By.id("finish");
     public By inputFirstName = By.id("first-name");
     public By inputLastName = By.id("last-name");
