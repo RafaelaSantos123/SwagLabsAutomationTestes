@@ -27,15 +27,16 @@ public class core {
   public static compraPage compraPage = new compraPage();
   public static acessarCarrinhoPage acessarCarrinhoPage = new acessarCarrinhoPage();
   public static checkoutPage checkoutPage = new checkoutPage();
+  public static tabelaPage tabelaPage = new tabelaPage();
 
-    public static void abrirChrome(){
+    public static void abrirChrome(String url){
         WebDriverManager.chromedriver().setup();
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(ops);
         driver.manage().window().maximize();
         esperaImplicita();
-        driver.get("https://www.saucedemo.com");
+        driver.get(url);
 
 
     }

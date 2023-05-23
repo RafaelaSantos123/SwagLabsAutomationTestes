@@ -11,7 +11,7 @@ public class acessarCarrinhoTestes extends core {
     @BeforeEach
     void openBrowser(){
 
-        abrirChrome();
+        abrirChrome("https://www.saucedemo.com");
     }
     @Test
     void realizarCompraCarrinho () throws InterruptedException{

@@ -14,7 +14,7 @@ public class checkoutPage extends core {
     public By inputFirstName = By.id("first-name");
     public By inputLastName = By.id("last-name");
     public By inputPostalCore = By.id("postal-code");
-    //public By btnHome = By.id("back-to-products");
+    public By btnHome = By.id("back-to-products");
 
     public void finalizarCompra (String nome, String sobrenome, String cep){
         clicar(btnCarrinho);

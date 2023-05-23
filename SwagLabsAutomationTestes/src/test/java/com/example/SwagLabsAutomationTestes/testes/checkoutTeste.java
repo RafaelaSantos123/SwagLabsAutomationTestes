@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
 public class checkoutTeste extends core {
     @BeforeEach
     void openBrowser(){
-        abrirChrome();
+        abrirChrome("https://www.saucedemo.com");
     }
     @Test
     void realizarCompra() throws InterruptedException  {

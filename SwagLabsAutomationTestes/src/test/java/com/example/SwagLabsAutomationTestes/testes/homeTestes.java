@@ -18,7 +18,7 @@ class homeTestes extends core {
     @BeforeEach
     void openBrowser(){
 
-        abrirChrome();
+        abrirChrome("https://www.saucedemo.com");
     }
     @Test
     void validarLogin() throws InterruptedException {

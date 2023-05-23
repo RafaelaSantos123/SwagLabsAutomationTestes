@@ -14,19 +14,19 @@ class loginTestes extends core {
 
     @BeforeEach
     void openBrowser(){
-        abrirChrome();
+        abrirChrome("https://www.saucedemo.com");
     }
 
     @Test
     void validarLogin() throws InterruptedException {
 
         loginPage.realizarLogin();
-        driver.quit();
+
 
     }
     @AfterEach
     void quitBrowser(){
-
+        driver.quit();
 
 
     }

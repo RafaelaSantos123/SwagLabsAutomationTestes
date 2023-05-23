@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class tabelaTeste  extends core{
         @BeforeEach
         void openBrowser(){
+
             abrirChrome("https://demoqa.com/webtables");
         }
         @Test

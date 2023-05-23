@@ -9,7 +9,7 @@ public class compraTestes extends core {
     @BeforeEach
     void openBrowser(){
 
-        abrirChrome();
+        abrirChrome("https://www.saucedemo.com");
     }
     @Test
     void realizarCompra() throws InterruptedException  {
